@@ -25,5 +25,5 @@ executable=/usr/bin/samtools
 transfer_executable=False
 
 initialdir=$(CURDIR)
-arguments="sort -@ $(THREADS) -m $(BYTES) $(IN) $(OUT)"
+arguments="sort -@ $(THREADS) -m $(BYTES) -o $(OUT) $(IN)"
 queue
